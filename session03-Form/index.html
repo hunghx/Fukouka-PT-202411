@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Cách tạo 1 biểu mẫu : form -->
+     <!-- 
+        action : địa chỉ của server mà dữ liệu được gửi tới
+        method : phương thức / cách thức : POST / GET
+         + Get : thông tin bị lộ trên đường dẫn (vì thông tin được gửi vào đường dẫn url)
+         + Post : thông tin không hiển thị trên đường dẫn (vì được gửi vào phần body của 1 yêu cầu)
+        enctype : kiểu dữ liệu / định dạng của dữ liệu khi gửi lên 
+     -->
+     <form action="https://www.google.com.vn" method="post"> 
+        <!-- định nghĩa các thông tin cần nhập vào -->
+         <label for="name">Nhập họ và tên</label> 
+         <!-- Khi sử dụng thuộc tính for của thẻ label + id của ô input thì khi ấn vào thẻ label
+          thì sẽ focus / tập trung vào ô input để nhập -->
+         <input type="text" name="fullname" id="name" placeholder="nhập tên của bạn">
+        
+         <button type="submit">Gửi</button>
+     </form>
+</body>
+</html>
