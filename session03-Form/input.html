@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Kết hợp form và table  -->
+    <form>
+        <table border="1"  cellpadding="5">
+            <caption>Form demo</caption>
+            <tr>
+                <th>
+                    <!-- label cua input -->
+                    <label for="fullName">FullName</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                    <input type="text" name="fullName" id="fullName">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- label cua input -->
+                    <label for="password">Password</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- label cua input -->
+                    <label for="sex">Sex</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                    <input type="radio" name="sex" id="sex"> Nam
+                    <input type="radio" name="sex" id="sex"> Nữ
+                    <input type="radio" name="sex" id="sex"> Khác
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- label cua input -->
+                    <label for="sport">Sports</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                    <input type="checkbox" name="sport" id="sport"> Bóng đá
+                    <input type="checkbox" name="sport" id="sport"> Cầu lông
+                    <input type="checkbox" name="sport" id="sport"> Quần Vợt
+                    <input type="checkbox" name="sport" id="sport"> Golf
+                    <input type="checkbox" name="sport" id="sport"> Cờ vua
+        
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- label cua input -->
+                    <label for="address">Address</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                    <select name="city" id="address1">
+                        <option value="">--Chưa có tỉnh nào đc chọn--</option>
+                        <option value="">TP Hồ Chí Minh</option>
+                        <option value="">TP Hà Nội</option>
+                        <option value="">Nghệ An</option>
+                        <option value="">Thanh Hóa</option>
+                        <option value="">Ninh Bình</option>
+                        <option value="">TP Đà Nẵng</option>
+                    </select>
+                    <select name="province" id="address2">
+                        <option value="">Quận 1</option>
+                        <option value="">Quận 2</option>
+                        <option value="">Quận 3</option>
+                        <option value="">Quận 4</option>
+                        <option value="">Quận 5</option>
+                        <option value="">Quận 6</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>
