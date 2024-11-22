@@ -20,7 +20,7 @@
                 </th>
                 <td>
                     <!-- ô input nhập vào -->
-                    <input type="text" name="fullName" id="fullName">
+                    <input type="text" name="fullName" id="fullName" required>
                 </td>
             </tr>
             <tr>
@@ -48,6 +48,16 @@
             <tr>
                 <th>
                     <!-- label cua input -->
+                    <label for="para">Paragraph</label>
+                </th>
+                <td>
+                    <!-- ô input nhập vào -->
+                  <textarea name="para" id="" cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <!-- label cua input -->
                     <label for="sport">Sports</label>
                 </th>
                 <td>
@@ -63,13 +73,13 @@
             <tr>
                 <th>
                     <!-- label cua input -->
-                    <label for="address">Address</label>
+                    <label for="address1">Address</label>
                 </th>
                 <td>
                     <!-- ô input nhập vào -->
                     <select name="city" id="address1">
-                        <option value="">--Chưa có tỉnh nào đc chọn--</option>
-                        <option value="">TP Hồ Chí Minh</option>
+                        <option selected value="">--Chưa có tỉnh nào đc chọn--</option>
+                        <option value="59">TP Hồ Chí Minh</option>
                         <option value="">TP Hà Nội</option>
                         <option value="">Nghệ An</option>
                         <option value="">Thanh Hóa</option>
@@ -84,6 +94,22 @@
                         <option value="">Quận 5</option>
                         <option value="">Quận 6</option>
                     </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="color" name="color" id="" ><br>
+                    <input type="date" name="date" id=""><br>
+                    <input type="datetime-local" name="datetime" id=""><br>
+                    <input type="time" name="time" id=""> <br>
+                    <input type="email" name="email" id=""><br>
+                    <input type="hidden" name="hidden"> <!-- ẩn đi -->
+                    <input type="number" name="number" id=""> <br>
+                    <input type="file" name="file" id=""> <br>
+                    <input type="range" name="range" id="" min="10" max="100"> <br>
+                    <!-- <input type="submit" value="Gửi"> -->
+                     <button type="submit">Gửi</button>
+                     <button type="reset">Reset</button>
                 </td>
             </tr>
         </table>
