@@ -1,0 +1,66 @@
+/* thương * dùng để reset CSS */
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/* Tag name - tên thẻ */
+/* p{
+    font-size: 50px;
+    text-transform: uppercase;
+} */
+/* h2{
+    background-color: blue;
+    color: brown;
+} */
+
+/* ID - định danh - id của thẻ */
+/* #nam{
+    font-size: 20px;
+    text-transform: lowercase; 
+} */
+/* Class - Lớp - định danh chung của 1 nhóm */
+/* .subject{
+    text-decoration: line-through;
+    font-style: italic;
+} */
+
+div  i{
+    font-style: normal;
+}
+div > i{
+    font-style: normal;
+}
+
+#li02 + li{
+    font-weight: bold;
+}
+
+a:active{
+    color: red;
+}
+
+#test::before{
+    content: "1";
+    font-size: 50px;
+}
+#test::after{
+    content: "3";
+    font-size: 150px;
+}
+input{
+    border: 2px solid black;
+    color: black;
+}
+input:focus{
+    border: none;
+    color: red;
+}
+img:hover{
+    border: 4px solid rgb(233, 6, 6);
+    cursor: pointer;
+}
+
+
