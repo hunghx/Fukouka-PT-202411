@@ -1,0 +1,86 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/* Set up container */
+.container {
+    
+}
+
+#form {
+    width: 800px;
+    padding: 15px 30px 30px;
+    background-color: aliceblue;
+    margin: 10px auto;
+}
+#form >  .form__title{
+    font-size: larger;
+}
+
+/* inline */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.row>.row__item {
+    gap: .5rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+
+}
+.width_item:nth-of-type(1){
+    flex-basis: 45%;
+}
+.width_item:nth-of-type(2){
+    flex-basis: 35%;
+}
+.width_item:nth-of-type(3){
+    flex-basis: 20%;
+}
+.row__item  .input--item{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #808080;
+}
+.row__item span{
+    color: #808080;
+    font-size: smaller;
+}
+.row__item .row_item--email{
+    display: flex;
+}
+.row_item--email > span{
+    padding: 10px 15px 5px 0px;
+   padding: 5px 10px;
+   border: 2px solid black; 
+   border-right: none;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.row_item--email > input{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+
+/*  dùng chung css */
+.mb-4{
+    margin-bottom: 1rem;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(51, 48, 232);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}

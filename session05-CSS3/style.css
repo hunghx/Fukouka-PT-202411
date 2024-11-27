@@ -1,0 +1,57 @@
+/* bộ chọn theo thuộc tính */
+p[class^="text"] {
+    font-size: 20px;
+    color: blue;
+}
+
+:root {}
+
+.box {
+    width: 1000px;
+    height: 1000px;
+    /* background: linear-gradient(45deg,red, yellow); */
+    background-image: url('https://antimatter.vn/wp-content/uploads/2022/10/hinh-nen-gai-xinh.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+img {
+    filter: brightness(50);
+    filter: blur(0.5);
+    filter: contrast(20);
+    border: 1px solid black;
+    box-shadow: 100px 100px 100px 10px rgba(193, 18, 18,0.4);
+}
+
+p{
+    text-shadow: 10px 10px 1px rgb(19, 18, 18);
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+        border-radius: 0px;
+      }
+      to {
+        transform:rotate(360deg);
+        border-radius: 50%;
+      }
+   
+}
+.circle{
+    color: white;
+    font-size: larger;
+    text-align: center;
+    line-height:200px ;
+    width: 200px;
+    height: 200px;
+    background-color: sienna;
+    /* transform: rotate(45deg);
+    /* transform: rotateY(89deg); */
+    /* transform: scale(0.5);
+    transform: translate(300px,100px); */ 
+    animation: move 2s infinite linear;
+    
+}
+
