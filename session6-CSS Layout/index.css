@@ -21,7 +21,7 @@ div[class^="box"]{
     /* background-color: #f2f2f2; */
 }
 .container{
-    position: relative;
+    /* position: relative; */
     width: 1000px;
     height: 200vw;
     background-color: aqua;
@@ -29,24 +29,38 @@ div[class^="box"]{
     padding: 20px 40px;
 }
 .content{
-    position: static;
+    height: 100vh;
+    /* position: static; */
     background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /*  căn giữa theo main axis */
+    justify-content:center;
+    /*  căn chỉnh theo trục phụ  */
+    align-content: end;
+    /*  căn chỉnh khoảng cách */
+    gap: 0px;
+  flex-flow: column-reverse;
+  flex-wrap: ;
 }
 .box1{
+    /* flex-basis: 50% */
     background-color: red;
-    position: static;
+    /* position: static;
     top: 100px;
-    left: 200px;
+    left: 200px; */
 }
 .box2{
+    /* flex: 1 1 auto; */
     background-color: blue;
-    position: relative;
+    /* position: relative;
     top: 300px;
-    left: 300px;
+    left: 300px; */
 }
 .box3{
     background-color: green;
-    position: fixed;
+    /* position: fixed;
     top: 0px;
-    left: 0px;
+    left: 0px; */
 }
