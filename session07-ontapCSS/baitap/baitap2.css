@@ -1,0 +1,57 @@
+
+/* Reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 300vh;
+}
+ul>li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+header{
+    margin: 10px 15px;
+    padding: 15px 20px;
+    background-color: cornflowerblue;
+}
+
+.icon-search{
+    color: red;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.gap-2{
+    gap: 10px;
+}
+.search{
+    position: relative;
+}
+.search > label{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.search > input{
+    padding: 2px 5px;
+}
+a:hover{
+    font-size: larger;
+    color:orange;
+}

@@ -1,0 +1,69 @@
+/* 
+body{
+    height: 300vh;
+}
+#container{
+    position: static;
+    margin: 30px;
+    background-color: blueviolet;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    color: bisque;
+    background-color: brown;
+    border: 1px dashed gray;
+}
+
+.relative-element{
+    position:  relative;
+    left: 600px;
+}
+.absolute-element{
+    /* vị trí tuyệt đối phụ thuộc vào phần
+     tử cha gần nhất không phải static */
+    /* position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.fixed-element{
+    /* vị trí tuyệt đối phụ thuộc khung nhìn */
+    /* position: fixed;
+    bottom: 0px;
+    right: 0px;
+
+} */ 
+
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* thay đổi trục mainaxis */
+    flex-direction: row;
+    /*  căn chỉnh nội dung các item trục main */
+    justify-content: space-around;
+    /*  căn chỉnh theo trục phụ */
+    align-content: space-around;    
+}
+
+.box{
+    /* text-align: center;
+    line-height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.box1{
+    flex-basis: 200px;
+}
+.box2{
+    flex: 1 1 auto;
+    order: -1;
+}
