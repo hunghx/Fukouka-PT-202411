@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card{
+    max-width: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 0px 5px 1px black;
+    margin: 20px 0px;
+}
+
+.card img{
+    width: 100%;
+}
+.card-body{
+    margin: 10px;
+    padding: 5px;
+
+}
+.card-body > .title{
+    font-weight: bold;
+}
+.info{
+    padding: 5px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info--item{
+    color: red;
+    list-style: none;
+}
+.footer{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: blue;
+}
+hr{
+    border-width: 0.5px;
+    border-color: blue;
+}
+.detail--btn{
+    padding: 10px 10px;
+    border: 1px dashed gray;
+    background-color: transparent;
+    border-radius: 3px;
+}
+@media only screen and (max-width: 600px) {
+    *{font-size: 80%;}
+    .card{
+        max-width: 150px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px) {
+    *{font-size: 90%;}
+    .card{
+        max-width: 200px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    *{font-size: 95%;}
+    .card{
+        max-width: 250px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    *{font-size: 100%;}
+    .card{
+        max-width: 300px;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up)
