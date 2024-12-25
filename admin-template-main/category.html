@@ -251,9 +251,9 @@
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addModal">+ Add new Category</button>
                                 </a>
                                 <form class="d-flex" role="search">
-                                    <input class="form-control me-2 fst-italic" type="search" placeholder="Enter category's name... "
+                                    <input class="form-control me-2 fst-italic" id="search" type="search" placeholder="Enter category's name... "
                                            aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <button class="btn btn-outline-success" onclick="handleSearch()">Search</button>
                                 </form>
                             </div>
                         </nav>
@@ -488,7 +488,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="addNewCategory()">ADD</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="handleAddCategory()">ADD</button>
         </div>
       </div>
     </div>
