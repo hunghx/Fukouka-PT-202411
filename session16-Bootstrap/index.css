@@ -1,0 +1,35 @@
+
+
+#search{
+    width: 30px !important;
+    height: 30px;
+    background-color: wheat;
+    text-align: center;
+    line-height: 30px;
+}
+
+.container-fluid{
+    box-shadow: 0px 3px 4px 1px rgba(51, 49, 51, 0.386);
+
+}
+
+.sale-price{
+    font-size: small;
+    text-decoration: line-through;
+    opacity: 0.7;
+    margin-left: 5px;
+}
+
+.main,.contact-info{
+    padding: 20px;
+    margin-top: 30px;
+    width: 1150px;
+    margin: 0 auto;
+}
+footer{
+    background-color: rgb(73, 114, 13);
+    color: white;
+}
+.rounded-item{
+    border-radius: 50% !important;
+}
