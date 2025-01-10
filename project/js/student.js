@@ -50,3 +50,33 @@ function searchByName(){
     })
     showListStudent(searchList); // hiển thị kết quả tìm kiếm
 }
+
+// sắp xếp : kiểu cơ bản, number(>,<), string(localCompare)
+// sắp xếp đối tượng : theo trường nào, theo thuộc tính nào
+// Sắp xếp giảm dần theo năm sinh
+
+// cách sắp xếp trong array : array.sort(function(a,b){return number})
+function sortStudent(property , by){
+    console.log("array ", studentsList);
+    console.log(property , by);
+
+    if(property == "year"){
+        if(by == "DESC"){ // asending : tăng dần / descending : giảm dần
+            // Giảm dần
+            studentsList.sort((a,b)=> b.year - a.year);
+        }else{
+            // Tăng dần
+            studentsList.sort((a,b)=>a.year - b.year);
+        }
+    }else  if(property == "name"){
+        if(by == "DESC"){ // asending : tăng dần / descending : giảm dần
+            // Giảm dần
+            studentsList.sort((a,b)=> b.studentName.localeCompare(a.studentName));
+        }else{
+            // Tăng dần
+            studentsList.sort((a,b)=> a.studentName.localeCompare(b.studentName));
+        }
+    }
+    // hiển thị lại danh sách sau khi sắp xếp
+    showListStudent(studentsList);
+}
